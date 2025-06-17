@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="bn_item_home">首页</string>
+    <string name="bn_item_quotation">行情</string>
+    <string name="bn_item_transaction">交易</string>
+    <string name="bn_item_contract">合约</string>
+    <string name="bn_item_capital">资金</string>
+
+</resources>

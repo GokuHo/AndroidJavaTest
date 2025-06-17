@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="quotation">#FBF3C1</color>
+    <color name="transaction">#64E2B7</color>
+    <color name="contract">#DC8BE0</color>
+    <color name="capital">#D50B8B</color>
+
+    <color name="bn_text_selected">#868D9A</color>
+    <color name="bn_text_unselected">#222732</color>
+</resources>
