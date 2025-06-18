@@ -10,4 +10,18 @@
 
     <color name="bn_text_selected">#868D9A</color>
     <color name="bn_text_unselected">#222732</color>
+
+    <color name="edittext_bg">#EAECEF</color>
+    <color name="dividingline">#EAECEF</color>
+
+    <color name="charge_bg">#F8DC61</color>
+
+    <color name="actionbutton_bg">#EAECEF</color>
+    <color name="actionbutton_text">#21252F</color>
+
+    <color name="tab_indicator">#E7BB41</color>
+
+    <color name="tab_text_selected">#21252F</color>
+    <color name="tab_text_unselected">#868D9A</color>
+
 </resources>

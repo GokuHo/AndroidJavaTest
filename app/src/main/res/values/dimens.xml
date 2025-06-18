@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="space0">0dp</dimen>-->
+<!--    <dimen name="space1">2dp</dimen>-->
+<!--    <dimen name="space2">4dp</dimen>-->
+<!--    <dimen name="space3">8dp</dimen>-->
+<!--    <dimen name="space4">16dp</dimen>-->
+<!--    <dimen name="space5">32dp</dimen>-->
+
+    <dimen name="space0">0dp</dimen>
+    <dimen name="space1">2dp</dimen>
+    <dimen name="space2">4dp</dimen>
+    <dimen name="space3">6dp</dimen>
+    <dimen name="space4">8dp</dimen>
+    <dimen name="space5">10dp</dimen>
+    <dimen name="space6">12dp</dimen>
+    <dimen name="space7">14dp</dimen>
+    <dimen name="space8">16dp</dimen>
+    <dimen name="space9">18dp</dimen>
+
+    <dimen name="space10">20dp</dimen>
+    <dimen name="space11">22dp</dimen>
+    <dimen name="space12">24dp</dimen>
+    <dimen name="space13">26dp</dimen>
+    <dimen name="space14">28dp</dimen>
+    <dimen name="space15">30dp</dimen>
+    <dimen name="space16">32dp</dimen>
+
+    <dimen name="edittext_radius">7dp</dimen>
+    <dimen name="actionbutton_radius">15dp</dimen>
+</resources>

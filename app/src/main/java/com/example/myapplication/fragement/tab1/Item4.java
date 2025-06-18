@@ -1,4 +1,4 @@
-package com.example.myapplication.fragement;
+package com.example.myapplication.fragement.tab1;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
-public class Quotation extends Fragment {
+public class Item4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_quotation, container, false);
+        return inflater.inflate(R.layout.tab1_item4, container, false);
     }
 }

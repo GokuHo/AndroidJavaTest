@@ -1,4 +1,4 @@
-package com.example.myapplication.fragement;
+package com.example.myapplication.fragement.bn;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

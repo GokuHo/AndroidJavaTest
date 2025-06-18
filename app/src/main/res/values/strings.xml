@@ -10,4 +10,30 @@
     <string name="logo">logo</string>
     <string name="search_hint">BTC</string>
 
+    <string name="property">资产总览(USD)</string>
+    <string name="charge">充值</string>
+
+    <string name="invitation">邀请奖励</string>
+    <string name="financial">理财</string>
+    <string name="recharge">充值</string>
+    <string name="wotd">WOTD</string>
+    <string name="launchpad">Launchpad</string>
+    <string name="binancenft">Binance NFT</string>
+    <string name="more">更多</string>
+
+    <string name="tab1_1">热门</string>
+    <string name="tab1_2">涨幅榜</string>
+    <string name="tab1_3">跌幅榜</string>
+    <string name="tab1_4">新币上线</string>
+    <string name="tab1_5">24h成交额</string>
+    <string name="tab1_6">市值</string>
+
+    <string name="tab2_1">发现</string>
+    <string name="tab2_2">关注</string>
+    <string name="tab2_3">公告</string>
+    <string name="tab2_4">新闻</string>
+    <string name="tab2_5">币安学院</string>
+    <string name="tab2_6">直播</string>
+
+
 </resources>

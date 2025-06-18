@@ -12,11 +12,11 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myapplication.fragement.Capital;
-import com.example.myapplication.fragement.Contract;
-import com.example.myapplication.fragement.Home;
-import com.example.myapplication.fragement.Quotation;
-import com.example.myapplication.fragement.Transaction;
+import com.example.myapplication.fragement.bn.Capital;
+import com.example.myapplication.fragement.bn.Contract;
+import com.example.myapplication.fragement.bn.Home;
+import com.example.myapplication.fragement.bn.Quotation;
+import com.example.myapplication.fragement.bn.Transaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
