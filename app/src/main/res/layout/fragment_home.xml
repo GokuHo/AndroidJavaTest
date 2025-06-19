@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/scan"
-                        android:contentDescription="@string/logo" />
+                        android:contentDescription="@string/scan" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -61,14 +61,15 @@
                         android:layout_gravity="center_vertical"
                         style="@style/default_margin_h"
                         android:src="@drawable/service"
-                        android:contentDescription="@string/logo" />
+                        android:contentDescription="@string/service" />
 
                     <ImageView
+                        android:id="@+id/ring"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ring"
-                        android:contentDescription="@string/logo" />
+                        android:contentDescription="@string/ring" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -76,7 +77,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/space8"
                         android:src="@drawable/handcoin"
-                        android:contentDescription="@string/logo" />
+                        android:contentDescription="@string/handcoin" />
                 </LinearLayout>
 
             </LinearLayout>

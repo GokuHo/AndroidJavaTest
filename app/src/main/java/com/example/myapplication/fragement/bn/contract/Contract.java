@@ -1,4 +1,4 @@
-package com.example.myapplication.fragement.bn;
+package com.example.myapplication.fragement.bn.contract;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
-public class Transaction extends Fragment {
+public class Contract extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_transaction, container, false);
+        return inflater.inflate(R.layout.fragment_contract, container, false);
     }
 }

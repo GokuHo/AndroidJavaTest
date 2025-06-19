@@ -28,4 +28,9 @@
 
     <dimen name="edittext_radius">7dp</dimen>
     <dimen name="actionbutton_radius">15dp</dimen>
+
+    <dimen name="recycler_right_proportion">0.7</dimen>
+
+    <dimen name="coin_icon">30dp</dimen>
+
 </resources>

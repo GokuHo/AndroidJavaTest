@@ -9,6 +9,10 @@
 
     <string name="logo">logo</string>
     <string name="search_hint">BTC</string>
+    <string name="scan">scan</string>
+    <string name="service">service</string>
+    <string name="ring">ring</string>
+    <string name="handcoin">hand-coin</string>
 
     <string name="property">资产总览(USD)</string>
     <string name="charge">充值</string>
@@ -34,6 +38,11 @@
     <string name="tab2_4">新闻</string>
     <string name="tab2_5">币安学院</string>
     <string name="tab2_6">直播</string>
+
+    <string name="tab1_4_name">名称</string>
+    <string name="tab1_4_price">最新价</string>
+    <string name="tab1_4_rate">24h涨跌幅</string>
+
 
 
 </resources>

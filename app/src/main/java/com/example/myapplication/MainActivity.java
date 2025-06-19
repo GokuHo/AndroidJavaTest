@@ -12,11 +12,11 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myapplication.fragement.bn.Capital;
-import com.example.myapplication.fragement.bn.Contract;
-import com.example.myapplication.fragement.bn.Home;
-import com.example.myapplication.fragement.bn.Quotation;
-import com.example.myapplication.fragement.bn.Transaction;
+import com.example.myapplication.fragement.bn.capital.Capital;
+import com.example.myapplication.fragement.bn.contract.Contract;
+import com.example.myapplication.fragement.bn.home.Home;
+import com.example.myapplication.fragement.bn.quotation.Quotation;
+import com.example.myapplication.fragement.bn.transaction.Transaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
             bottom_navigation = findViewById(R.id.bottom_navigation);
+
             bottom_navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {

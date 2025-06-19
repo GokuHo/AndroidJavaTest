@@ -7,7 +7,8 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
+        android:minHeight="500dp"
         android:gravity="center"
         android:text="@string/tab1_1" />
 

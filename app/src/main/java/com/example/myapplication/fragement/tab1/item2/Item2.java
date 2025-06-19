@@ -1,4 +1,4 @@
-package com.example.myapplication.fragement.tab1;
+package com.example.myapplication.fragement.tab1.item2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

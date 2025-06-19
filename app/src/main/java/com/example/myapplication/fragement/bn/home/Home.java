@@ -1,25 +1,21 @@
-package com.example.myapplication.fragement.bn;
+package com.example.myapplication.fragement.bn.home;
 
-import android.annotation.SuppressLint;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.myapplication.R;
-import com.example.myapplication.fragement.tab1.Item1;
-import com.example.myapplication.fragement.tab1.Item2;
-import com.example.myapplication.fragement.tab1.Item3;
-import com.example.myapplication.fragement.tab1.Item4;
-import com.example.myapplication.fragement.tab1.Item5;
-import com.example.myapplication.fragement.tab1.Item6;
+import com.example.myapplication.fragement.tab1.item4.Item4;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -28,6 +24,8 @@ import java.util.List;
 
 public class Home extends Fragment {
 
+    private HomeVM viewModel;
+    private ImageView ring;
     private TabLayout tab1;
     private ViewPager2 pager1;
     private List<Fragment> fragments;
@@ -38,13 +36,27 @@ public class Home extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+
+//        ring = view.findViewById(R.id.ring);
+
+
+
+
+
         fragments = new ArrayList<>();
-        fragments.add(new Item1());
-        fragments.add(new Item2());
-        fragments.add(new Item3());
         fragments.add(new Item4());
-        fragments.add(new Item5());
-        fragments.add(new Item6());
+        fragments.add(new Item4());
+        fragments.add(new Item4());
+        fragments.add(new Item4());
+        fragments.add(new Item4());
+        fragments.add(new Item4());
+
+//        fragments.add(new Item1());
+//        fragments.add(new Item2());
+//        fragments.add(new Item3());
+//        fragments.add(new Item4());
+//        fragments.add(new Item5());
+//        fragments.add(new Item6());
 
         tabNames = new ArrayList<>();
         tabNames.add(getResources().getString(R.string.tab1_1));
@@ -57,6 +69,8 @@ public class Home extends Fragment {
         tab1 = view.findViewById(R.id.tab1);
         pager1 = view.findViewById(R.id.pager1);
 
+        viewModel = new ViewModelProvider(this).get(HomeVM.class);
+
         FragmentStateAdapter pagerAdapter = new ScreenSlidePagerAdapter(requireActivity());
         pager1.setAdapter(pagerAdapter);
 
@@ -67,6 +81,7 @@ public class Home extends Fragment {
             }
         }).attach();
 
+
         return view;
     }
 
@@ -75,6 +90,7 @@ public class Home extends Fragment {
             super(fa);
         }
 
+        @NonNull
         @Override
         public Fragment createFragment(int position) {
             return fragments.get(position);
