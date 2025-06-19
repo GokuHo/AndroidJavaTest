@@ -12,6 +12,7 @@
     <color name="bn_text_unselected">#222732</color>
 
     <color name="edittext_bg">#EAECEF</color>
+    <color name="notification_bg">#E7BB41</color>
     <color name="dividingline">#EAECEF</color>
 
     <color name="charge_bg">#F8DC61</color>

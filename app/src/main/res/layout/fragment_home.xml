@@ -33,52 +33,74 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/default_margin_h"
+                    android:autofillHints="@string/search_hint"
                     android:background="@drawable/edittext_bg"
                     android:padding="@dimen/space4"
+                    android:layout_gravity="center"
                     android:inputType="text"
                     android:drawableStart="@drawable/search"
                     android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:drawablePadding="@dimen/space4"
+                    app:endIconMode="clear_text"
                     android:hint="@string/search_hint" />
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_vertical">
+                    android:layout_height="match_parent">
 
                     <ImageView
+                        android:id="@+id/scan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
                         android:src="@drawable/scan"
-                        android:contentDescription="@string/scan" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
 
                     <ImageView
+                        android:id="@+id/service"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        style="@style/default_margin_h"
                         android:src="@drawable/service"
-                        android:contentDescription="@string/service" />
+                        app:layout_constraintStart_toEndOf="@id/scan"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/space10" />
 
                     <ImageView
                         android:id="@+id/ring"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
                         android:src="@drawable/ring"
-                        android:contentDescription="@string/ring" />
+                        app:layout_constraintStart_toEndOf="@id/service"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/space10" />
 
-                    <ImageView
+                    <TextView
+                        android:id="@+id/ringCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="@dimen/space8"
+                        android:background="@drawable/notification_bg"
+                        app:layout_constraintStart_toStartOf="@+id/ring"
+                        app:layout_constraintBottom_toBottomOf="@+id/ring"
+                        android:textSize="8sp"
+                        android:layout_marginBottom="@dimen/space3"
+                        android:layout_marginStart="@dimen/space5"/>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/handcoin"
-                        android:contentDescription="@string/handcoin" />
-                </LinearLayout>
+                        app:layout_constraintStart_toEndOf="@id/ring"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/space10" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
 

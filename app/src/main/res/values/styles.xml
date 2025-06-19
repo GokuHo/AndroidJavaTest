@@ -10,4 +10,14 @@
         <item name="android:layout_marginBottom">@dimen/space8</item>
     </style>
 
+
+    <style name="NoBorderTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundMode">none</item>
+
+        <item name="android:layout_marginStart">@dimen/space8</item>
+        <item name="android:layout_marginEnd">@dimen/space8</item>
+    </style>
+
 </resources>
