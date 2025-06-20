@@ -2,14 +2,23 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/capital">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="500dp"
+        android:minHeight="@dimen/tab_item_max_height"
         android:gravity="center"
-        android:text="@string/tab1_1" />
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space4"
+        android:background="@color/tab1_1_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/tab1_1" />
+    </LinearLayout>
 
 </FrameLayout>

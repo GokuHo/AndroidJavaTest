@@ -20,6 +20,9 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_normal"
+        android:textStyle="bold"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/icon"
         android:layout_marginStart="@dimen/space3"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,14 +42,18 @@
             android:id="@+id/price_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="111"
+            android:textColor="@color/text_normal"
+            android:textStyle="bold"
+            android:textSize="14sp"
             android:layout_gravity="end"/>
 
         <TextView
             android:id="@+id/price_convert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$111"
+            android:textColor="@color/text_gray"
+            android:textStyle="bold"
+            android:textSize="11sp"
             android:layout_gravity="end"
             android:layout_marginTop="@dimen/space2"/>
     </LinearLayout>
@@ -54,12 +61,12 @@
     <TextView
         android:id="@+id/price_rate"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:minWidth="78dp"
-        android:layout_height="28dp"
+        android:minHeight="28dp"
         android:gravity="center"
-        android:background="@drawable/rate_bg"
-        android:text="-10%"
         android:textColor="@color/white"
+        android:background="@drawable/rate_bg"
         android:singleLine="true"
         android:ellipsize="end"
         app:layout_constraintEnd_toEndOf="parent"

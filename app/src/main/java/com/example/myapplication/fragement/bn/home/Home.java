@@ -1,22 +1,14 @@
 package com.example.myapplication.fragement.bn.home;
 
-import static androidx.core.content.ContextCompat.getSystemService;
-
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,12 +23,22 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.myapplication.R;
-import com.example.myapplication.fragement.tab1.item4.Item4;
+import com.example.myapplication.fragement.tab1.item1.Tab1Item1;
+import com.example.myapplication.fragement.tab1.item2.Tab1Item2;
+import com.example.myapplication.fragement.tab1.item3.Tab1Item3;
+import com.example.myapplication.fragement.tab1.item4.Tab1Item4;
+import com.example.myapplication.fragement.tab1.item5.Tab1Item5;
+import com.example.myapplication.fragement.tab1.item6.Tab1Item6;
+import com.example.myapplication.fragement.tab2.item1.Tab2Item1;
+import com.example.myapplication.fragement.tab2.item2.Tab2Item2;
+import com.example.myapplication.fragement.tab2.item3.Tab2Item3;
+import com.example.myapplication.fragement.tab2.item4.Tab2Item4;
+import com.example.myapplication.fragement.tab2.item5.Tab2Item5;
+import com.example.myapplication.fragement.tab2.item6.Tab2Item6;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
-import java.util.EventListener;
 import java.util.List;
 
 public class Home extends Fragment {
@@ -45,10 +47,10 @@ public class Home extends Fragment {
     private EditText searchBar;
     private ImageView ring;
     private TextView ringCount;
-    private TabLayout tab1;
-    private ViewPager2 pager1;
-    private List<Fragment> fragments;
-    private List<String> tabNames;
+    private TabLayout tab1, tab2;
+    private ViewPager2 pager1, pager2;
+    private List<Fragment> fragments1, fragments2;
+    private List<String> tabNames1, tabNames2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -57,28 +59,39 @@ public class Home extends Fragment {
     }
 
     private void initFragmentsAndTabs() {
-        fragments = new ArrayList<>();
-        fragments.add(new Item4());
-        fragments.add(new Item4());
-        fragments.add(new Item4());
-        fragments.add(new Item4());
-        fragments.add(new Item4());
-        fragments.add(new Item4());
+        fragments1 = new ArrayList<>();
 
-//        fragments.add(new Item1());
-//        fragments.add(new Item2());
-//        fragments.add(new Item3());
-//        fragments.add(new Item4());
-//        fragments.add(new Item5());
-//        fragments.add(new Item6());
+        fragments1.add(new Tab1Item1());
+        fragments1.add(new Tab1Item2());
+        fragments1.add(new Tab1Item3());
+        fragments1.add(new Tab1Item4());
+        fragments1.add(new Tab1Item5());
+        fragments1.add(new Tab1Item6());
 
-        tabNames = new ArrayList<>();
-        tabNames.add(getResources().getString(R.string.tab1_1));
-        tabNames.add(getResources().getString(R.string.tab1_2));
-        tabNames.add(getResources().getString(R.string.tab1_3));
-        tabNames.add(getResources().getString(R.string.tab1_4));
-        tabNames.add(getResources().getString(R.string.tab1_5));
-        tabNames.add(getResources().getString(R.string.tab1_6));
+        tabNames1 = new ArrayList<>();
+        tabNames1.add(getResources().getString(R.string.tab1_1));
+        tabNames1.add(getResources().getString(R.string.tab1_2));
+        tabNames1.add(getResources().getString(R.string.tab1_3));
+        tabNames1.add(getResources().getString(R.string.tab1_4));
+        tabNames1.add(getResources().getString(R.string.tab1_5));
+        tabNames1.add(getResources().getString(R.string.tab1_6));
+
+        fragments2 = new ArrayList<>();
+
+        fragments2.add(new Tab2Item1());
+        fragments2.add(new Tab2Item2());
+        fragments2.add(new Tab2Item3());
+        fragments2.add(new Tab2Item4());
+        fragments2.add(new Tab2Item5());
+        fragments2.add(new Tab2Item6());
+
+        tabNames2 = new ArrayList<>();
+        tabNames2.add(getResources().getString(R.string.tab2_1));
+        tabNames2.add(getResources().getString(R.string.tab2_2));
+        tabNames2.add(getResources().getString(R.string.tab2_3));
+        tabNames2.add(getResources().getString(R.string.tab2_4));
+        tabNames2.add(getResources().getString(R.string.tab2_5));
+        tabNames2.add(getResources().getString(R.string.tab2_6));
     }
 
     @Override
@@ -89,14 +102,16 @@ public class Home extends Fragment {
         ring = view.findViewById(R.id.ring);
         ringCount = view.findViewById(R.id.ringCount);
         tab1 = view.findViewById(R.id.tab1);
+        tab2 = view.findViewById(R.id.tab2);
         pager1 = view.findViewById(R.id.pager1);
+        pager2 = view.findViewById(R.id.pager2);
 
         viewModel = new ViewModelProvider(this).get(HomeVM.class);
 
         searchBarFeature();
         ringNotificationFeature();
-        tab1Feature();
-
+//        tab1Feature();
+        tab2Feature();
     }
 
 
@@ -185,31 +200,59 @@ public class Home extends Fragment {
     }
 
     private void tab1Feature() {
-        FragmentStateAdapter pagerAdapter = new ScreenSlidePagerAdapter(requireActivity());
-        pager1.setAdapter(pagerAdapter);
+        FragmentStateAdapter pagerAdapter1 = new ScreenSlidePagerAdapter1(requireActivity());
+        pager1.setAdapter(pagerAdapter1);
 
         new TabLayoutMediator(tab1, pager1, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                tab.setText(tabNames.get(position));
+                tab.setText(tabNames1.get(position));
+            }
+        }).attach();
+    }
+    private void tab2Feature() {
+        FragmentStateAdapter pagerAdapter2 = new ScreenSlidePagerAdapter2(requireActivity());
+        pager2.setAdapter(pagerAdapter2);
+
+        new TabLayoutMediator(tab2, pager2, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                tab.setText(tabNames2.get(position));
             }
         }).attach();
     }
 
-    private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
-        public ScreenSlidePagerAdapter(FragmentActivity fa) {
+    private class ScreenSlidePagerAdapter1 extends FragmentStateAdapter {
+        public ScreenSlidePagerAdapter1(FragmentActivity fa) {
             super(fa);
         }
 
         @NonNull
         @Override
         public Fragment createFragment(int position) {
-            return fragments.get(position);
+            return fragments1.get(position);
         }
 
         @Override
         public int getItemCount() {
-            return fragments.size();
+            return fragments1.size();
+        }
+    }
+
+    private class ScreenSlidePagerAdapter2 extends FragmentStateAdapter {
+        public ScreenSlidePagerAdapter2(FragmentActivity fa) {
+            super(fa);
+        }
+
+        @NonNull
+        @Override
+        public Fragment createFragment(int position) {
+            return fragments2.get(position);
+        }
+
+        @Override
+        public int getItemCount() {
+            return fragments2.size();
         }
     }
 

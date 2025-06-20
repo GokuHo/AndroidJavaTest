@@ -3,26 +3,35 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="init">#EAECEF</color>
+
+    <color name="text_normal">#21252F</color>
+    <color name="text_gray">#868D9A</color>
+
     <color name="quotation">#FBF3C1</color>
     <color name="transaction">#64E2B7</color>
     <color name="contract">#DC8BE0</color>
     <color name="capital">#D50B8B</color>
 
-    <color name="bn_text_selected">#868D9A</color>
-    <color name="bn_text_unselected">#222732</color>
+    <color name="bn_text_selected">#222732</color>
 
-    <color name="edittext_bg">#EAECEF</color>
     <color name="notification_bg">#E7BB41</color>
-    <color name="dividingline">#EAECEF</color>
 
     <color name="charge_bg">#F8DC61</color>
 
-    <color name="actionbutton_bg">#EAECEF</color>
-    <color name="actionbutton_text">#21252F</color>
-
     <color name="tab_indicator">#E7BB41</color>
 
-    <color name="tab_text_selected">#21252F</color>
-    <color name="tab_text_unselected">#868D9A</color>
+    <color name="rate_rise_bg">#1DAF25</color>
+    <color name="rate_decline_bg">#E35461</color>
+
+    <color name="tab1_1_bg">#5409DA</color>
+    <color name="tab1_2_bg">#511D43</color>
+    <color name="tab1_3_bg">#64E2B7</color>
+    <color name="tab1_5_bg">#DC8BE0</color>
+    <color name="tab1_6_bg">#D50B8B</color>
+
+    <color name="tab1_4_seemore">#D4B632</color>
+
+    <color name="tab2_1_news_point">#BABEC6</color>
 
 </resources>

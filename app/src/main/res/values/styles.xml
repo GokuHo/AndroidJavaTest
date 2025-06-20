@@ -10,6 +10,20 @@
         <item name="android:layout_marginBottom">@dimen/space8</item>
     </style>
 
+    <style name="text_normal">
+        <item name="android:textColor">@color/text_normal</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_tab" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_recycler_title">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 
     <style name="NoBorderTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeWidth">0dp</item>

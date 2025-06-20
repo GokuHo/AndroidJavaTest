@@ -42,7 +42,9 @@
     <string name="tab1_4_name">名称</string>
     <string name="tab1_4_price">最新价</string>
     <string name="tab1_4_rate">24h涨跌幅</string>
+    <string name="tab1_4_seemore">查看更多</string>
 
+    <string name="tab1_1_news">快讯</string>
 
 
 </resources>

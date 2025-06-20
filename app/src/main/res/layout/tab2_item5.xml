@@ -11,14 +11,14 @@
         android:gravity="center"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/space4"
-        android:background="@color/tab1_6_bg">
+        android:background="@color/tab1_5_bg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
-            android:text="@string/tab1_6" />
+            android:text="@string/tab2_5" />
     </LinearLayout>
 
 </FrameLayout>
